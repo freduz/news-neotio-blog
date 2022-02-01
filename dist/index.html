@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="./css/output.css">
+  
     <title>NeoIto | BlogPage</title>
 </head>
 <body>
@@ -22,7 +23,7 @@
        <hr>
     </header>
     <nav class="container pt-2">
-      <ul class="flex justify-between items-center text-default font-robot">
+      <ul class="hidden  font-robot md:flex md:justify-between md:items-center md:text-default">
         <li><a href="" class="cursor-pointer">World</a></li>
         <li><a href="" class="cursor-pointer">U.S.</a></li>
         <li><a href="" class="cursor-pointer">Technology</a></li>
@@ -36,14 +37,47 @@
         <li><a href="" class="cursor-pointer">Style</a></li>
         <li><a href="" class="cursor-pointer">Travel</a></li>
       </ul>
-      <div class="h-[360px] mt-4 bg-hero-image bg-cover p-7 flex">
-         <div class="w-[600px]">
-          <div class="w-[70%]" >
-            <h1 class="text-[50px] text-white font-playfair font-bold leading-[114%]">Title of a longer
+      <div class="md:hidden flex items-center">
+        <button class="outline-none mobile-menu-button">
+          <svg
+            class="w-6 h-6 text-gray-500"
+            x-show="!showMenu"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+          <path d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div class="hidden mobile-menu">
+        <ul class="">
+          <li><a href="" class="cursor-pointer block text-sm px-2 py-4 text-white bg-primary font-robot">World</a></li>
+        <li><a href="#" class="cursor-pointer block text-sm px-2 py-4  hover:bg-primary transition duration-300">U.S.</a></li>
+        <li><a href="#" class="cursor-pointer block text-sm px-2 py-4  hover:bg-primary transition duration-300">Technology</a></li>
+        <li><a href="#" class="cursor-pointer block text-sm px-2 py-4  hover:bg-primary transition duration-300">Design</a></li>
+        <li><a href="#" class="cursor-pointer block text-sm px-2 py-4  hover:bg-primary transition duration-300">Culture</a></li>
+        <li><a href="#" class="cursor-pointer block text-sm px-2 py-4  hover:bg-primary transition duration-300">Business</a></li>
+        <li><a href="#" class="cursor-pointer block text-sm px-2 py-4  hover:bg-primary transition duration-300">Politics</a></li>
+        <li><a href="#" class="cursor-pointer block text-sm px-2 py-4  hover:bg-primary transition duration-300">Opinion</a></li>
+        <li><a href="#" class="cursor-pointer block text-sm px-2 py-4  hover:bg-primary transition duration-300">Science</a></li>
+        <li><a href="#" class="cursor-pointer block text-sm px-2 py-4  hover:bg-primary transition duration-300">Health</a></li>
+        <li><a href="#" class="cursor-pointer block text-sm px-2 py-4  hover:bg-primary transition duration-300">Style</a></li>
+        <li><a href="#" class="cursor-pointer block text-sm px-2 py-4  hover:bg-primary transition duration-300">Travel</a></li>
+        </ul>
+      </div>
+      <div class="bg-hero-image sm:mt-3 sm:h-[250px] md:h-[360px] md:mt-4  bg-cover md:p-7 sm:flex sm:items-center md:flex sm:text-center md:text-justify">
+         <div class=" w-[600px]">
+          <div class="sm:w-[100%] md:w-[70%]" >
+            <h1 class="text-white font-playfair font-bold sm:text-[30px] md:text-[50px] md:leading-[114%]">Title of a longer
               featured blog post</h1>
           </div>
-           <div class="w-[70%]">
-            <p class=" mt-[20px] text-white font-robot text-[20px] font-normal leading-[140%]">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.</p>
+           <div class="sm:w-[100%] md:w-[70%]">
+            <p class=" text-white font-robot md:mt-[20px]  md:text-[20px] font-normal leading-[140%]">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.</p>
            </div>
            <div class="mt-3">
             <a href="" class="text-white text-robot ">Continue reading...</a>
@@ -53,10 +87,11 @@
       </div>
 
     </nav>
-    <section class="container grid grid-cols-2 grid-rows-1 gap-3 mt-5">
+    <section class=" sm:grid sm:md:grid-cols-1 md:grid-rows-1 sm:gap-3  md:grid-cols-1 md:grid-rows-1 container lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:gap-3 mt-5">
      
       <div class="flex h-[275px] border-solid border-2 shadow-sm">
           <div  class="flex-1 pt-8 pl-5">
+           <div class="md:w-[70%]">
             <h4 class="text-base text-primary font-robot font-black">World</h4>
             <h2 class="text-[30px] font-playfair">Featured post</h2>
             <span class="text-base font-robot">Nov 12</span>
@@ -64,6 +99,7 @@
             <div class="mt-3">
              <a href="" class="font-robot text-base text-primary">Continue reading</a>
             </div>
+           </div>
           </div>
           <div class="basis-[30%]">
             <img src="./img/img1.jpg" alt="showcase image" class="w-full h-full bg-cover bg-no-repeat bg-center">
@@ -71,6 +107,7 @@
         </div>
         <div class="flex h-[275px] border-solid border-2 shadow-sm">
           <div  class="flex-1 pt-8 pl-5">
+           <div class="md:w-[70%]">
             <h4 class="text-base text-green-text font-robot font-black">Design</h4>
             <h2 class="text-[30px] font-playfair">Post title</h2>
             <span class="text-base font-robot">Nov 12</span>
@@ -78,6 +115,7 @@
             <div class="mt-3">
              <a href="" class="font-robot text-base text-primary">Continue reading</a>
             </div>
+           </div>
           </div>
           <div class="basis-[30%]">
             <img src="./img/img2.jpg" alt="showcase image" class="w-full h-full bg-cover bg-no-repeat bg-center">
@@ -220,7 +258,7 @@
       <a href="#" class="text-primary">Back to top</a> 
     </footer>
 
-
+    <script src="./js/index.js"></script>
 
 </body>
 </html>
