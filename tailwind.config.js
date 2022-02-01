@@ -25,7 +25,7 @@ module.exports = {
       },
       gridTemplateRows: {
         // Simple 8 row grid
-        '8': '80px 40px minmax(0, 300px) 40px minmax(0, 300px) 40px minmax(0, 300px) 40px minmax(0, 300px) 30px',
+        '8': '80px 40px minmax(0, 350px) 40px minmax(0, 350px) 40px minmax(0, 350px) 40px minmax(0, 350px) 30px',
 
         // Complex site-specific row configuration
         'layout': '200px minmax(900px, 1fr) 100px',
@@ -34,12 +34,7 @@ module.exports = {
     container:{
       center:true,
       padding: '2rem',
-      screens:{
-        lg:'1124px',
-        xl:'1124px',
-        "2xl" : '1124px',
-       
-      }
+      
     },
     fontFamily:{
       playfair:['Playfair Display', 'serif'],
