@@ -623,12 +623,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.5rem;
 }
 
+.mt-\[20px\]{
+  margin-top: 20px;
+}
+
+.ml-\[40px\]{
+  margin-left: 40px;
+}
+
+.ml-4{
+  margin-left: 1rem;
+}
+
 .block{
   display: block;
 }
 
 .flex{
   display: flex;
+}
+
+.grid{
+  display: grid;
 }
 
 .contents{
@@ -705,6 +721,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 250px;
 }
 
+.h-\[360px\]{
+  height: 360px;
+}
+
 .w-6{
   width: 1.5rem;
 }
@@ -737,8 +757,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-basis: 200px;
 }
 
+.basis-\[80\%\]{
+  flex-basis: 80%;
+}
+
 .cursor-pointer{
   cursor: pointer;
+}
+
+.grid-cols-2{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-3{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-rows-1{
+  grid-template-rows: repeat(1, minmax(0, 1fr));
+}
+
+.grid-rows-8{
+  grid-template-rows: 80px 40px minmax(0, 350px) 40px minmax(0, 350px) 40px minmax(0, 350px) 40px minmax(0, 350px) 30px;
 }
 
 .flex-row{
@@ -858,6 +898,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .p-3{
   padding: 0.75rem;
+}
+
+.p-7{
+  padding: 1.75rem;
 }
 
 .px-2{
@@ -988,6 +1032,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .leading-\[140\%\]{
   line-height: 140%;
+}
+
+.leading-\[114\%\]{
+  line-height: 114%;
 }
 
 .text-primary{
